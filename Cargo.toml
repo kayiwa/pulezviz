@@ -1,0 +1,19 @@
+[package]
+name = "pulezviz"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.5", features = ["derive"] }
+regex = "1.10"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+url = "2.5"
+
+tokio = { version = "1.35", features = ["full"] }
+axum = "0.8.8"
+tower-http = { version = "0.5", features = ["cors"] }
+
+duckdb = { version = "1.4.4", features = ["bundled"] }
