@@ -84,7 +84,7 @@ pub fn insert_rows(conn: &mut Connection, rows: impl Iterator<Item = LogRow>) ->
     }
     
     // Flush the appender
-    appender.flush();
+    let _ = appender.flush();
     
     println!("Import complete!");
     
